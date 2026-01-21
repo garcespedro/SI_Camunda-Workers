@@ -1,0 +1,43 @@
+╔══════════════════════════════════════════════╗
+║      RELATÓRIO DE DESPERDÍCIO ALIMENTAR      ║
+╚══════════════════════════════════════════════╝
+
+DATA: 04/12/2025 20:01:59
+LOTE: lote2
+RESPONSÁVEL COZEDURA: Gonçalo
+FUNCIONÁRIO: eu
+MOTIVO: qualidade_insuficiente
+
+────────────────────────────────────────────
+            ALIMENTOS DESPERDIÇADOS           
+────────────────────────────────────────────
+
+  • arroz           :    1 unidades
+  • tomate          :    3 unidades
+  • banana          :    2 unidades
+
+  TOTAL ITENS: 3
+
+────────────────────────────────────────────
+           INFORMAÇÕES DO PROCESSO          
+────────────────────────────────────────────
+
+DESCRIÇÃO DA PREPARAÇÃO:
+  foi aquilo que eu fiz, mas
+
+PROCEDIMENTO REALIZADO:
+  Suo muito rapido e isto deu ma
+
+EQUIPAMENTOS UTILIZADOS:
+  usei isto e aquilop
+
+
+────────────────────────────────────────────
+ASSINATURAS
+
+Responsável Cozedura: ____________________
+Data: ______/______/______
+
+══════════════════════════════════════════════
+         RELATÓRIO GERADO AUTOMATICAMENTE      
+══════════════════════════════════════════════
