@@ -1,161 +1,64 @@
-SI Camunda Workers
+# SI Camunda Workers
 
-Projeto desenvolvido no âmbito da unidade curricular de Sistemas de Informação.
+## English
 
-Português
-📌 Descrição
+### 📌 Introduction
+This project was developed as part of the Information Systems course. It consists of implementing **External Task Workers in Java**, integrated with a **BPMN 2.0 process** using Camunda.
 
-O projeto SI Camunda Workers consiste na implementação de External Task Workers em Java, integrados com um processo modelado em BPMN 2.0 na plataforma Camunda.
+The system manages food stock operations, automatic label generation, and waste report production.  
+This repository includes the Java implementation of the workers, the BPMN process file, and the JSON file containing stock data.
 
-O sistema permite:
+---
 
-Gestão de stock de alimentos
+### 📁 Folder Structure
 
-Geração automática de etiquetas
+- **CamundaWorker**: main project folder  
+- **pom.xml**: Maven configuration file  
+- **Main.java**: application entry point  
+- **GerarEtiquetas.java**: worker responsible for label generation  
+- **RelatorioDesperdicio.java**: worker responsible for waste reports  
+- **StockManager.java**: stock management logic  
+- **BPMN_LEI_SI2526_N2.bpmn**: BPMN process model  
+- **stock_alimentos.json**: JSON file with stock data  
+- **test**: unit tests  
 
-Produção de relatórios de desperdício
+---
 
-Integração com motor de workflow através do padrão External Task Worker
+### 🧰 Tools
+- **Java**: programming language used to implement the workers  
+- **Maven**: project build and dependency management tool  
+- **Camunda BPM**: workflow engine used to execute the BPMN process  
+- **JSON**: used for stock data storage  
 
-Este repositório inclui:
+---
 
-Implementação dos workers em Java
+## Português
 
-Ficheiro do processo BPMN
+### 📌 Introdução
+Este projeto foi desenvolvido no âmbito da unidade curricular de Sistemas de Informação. Consiste na implementação de **External Task Workers em Java**, integrados com um processo modelado em **BPMN 2.0** na plataforma Camunda.
 
-Ficheiro JSON com dados de stock
+O sistema permite gerir operações de stock de alimentos, gerar etiquetas automaticamente e produzir relatórios de desperdício.  
+Neste repositório encontra-se a implementação dos workers em Java, o ficheiro do processo BPMN e o ficheiro JSON com os dados de stock.
 
-📂 Estrutura do Projeto
+---
 
-CamundaWorker/
+### 📁 Estrutura de Pastas
 
-pom.xml
+- **CamundaWorker**: pasta principal do projeto  
+- **pom.xml**: ficheiro de configuração Maven  
+- **Main.java**: ponto de entrada da aplicação  
+- **GerarEtiquetas.java**: worker responsável pela geração de etiquetas  
+- **RelatorioDesperdicio.java**: worker responsável pelos relatórios de desperdício  
+- **StockManager.java**: lógica de gestão de stock  
+- **BPMN_LEI_SI2526_N2.bpmn**: modelo do processo BPMN  
+- **stock_alimentos.json**: ficheiro JSON com dados de stock  
+- **test**: testes unitários  
 
-src/main/java/org/example/
+---
 
-Main.java
+### 🧰 Ferramentas
+- **Java**: linguagem utilizada para implementar os workers  
+- **Maven**: ferramenta de gestão de dependências e build  
+- **Camunda BPM**: motor de workflow para execução do processo  
+- **JSON**: utilizado para armazenamento de dados  
 
-GerarEtiquetas.java
-
-RelatorioDesperdicio.java
-
-StockManager.java
-
-src/main/resources/
-
-BPMN_LEI_SI2526_N2.bpmn
-
-stock_alimentos.json
-
-src/test/
-
-⚙ Funcionalidades
-Gestão de Stock
-
-Leitura de dados de stock
-
-Atualização de quantidades
-
-Verificação de disponibilidade
-
-Geração de Etiquetas
-
-Criação automática de etiquetas
-
-Integração com variáveis do processo
-
-Relatórios de Desperdício
-
-Cálculo de desperdício alimentar
-
-Atualização de variáveis no workflow
-
-🛠 Tecnologias Utilizadas
-
-Java
-
-Maven
-
-Camunda BPM (BPMN 2.0)
-
-JSON
-
-🚀 Execução
-Requisitos
-
-Java 17 ou superior
-
-Maven
-
-Camunda Engine em execução
-
-Compilar
-mvn clean install
-
-Executar
-mvn exec:java
-
-
-Ou executar:
-
-org.example.Main
-
-English
-📌 Introduction
-
-The SI Camunda Workers project implements External Task Workers in Java, integrated with a BPMN 2.0 process using Camunda.
-
-The system supports:
-
-Food stock management
-
-Automatic label generation
-
-Waste report production
-
-Workflow integration using the External Task pattern
-
-This repository contains:
-
-Java worker implementation
-
-BPMN process file
-
-JSON stock data file
-
-📂 Folder Structure
-
-CamundaWorker/
-
-pom.xml
-
-src/main/java/org/example/
-
-src/main/resources/
-
-src/test/
-
-⚙ Features
-Stock Management
-
-Read and update stock data
-
-Check product availability
-
-Label Generation
-
-Automatically generate product labels
-
-Waste Reports
-
-Calculate food waste
-
-Update workflow variables
-
-🛠 Technologies
-
-Java
-
-Maven
-
-Camunda BPM
