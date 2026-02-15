@@ -1,18 +1,27 @@
+Projeto desenvolvido no âmbito da unidade curricular de Sistemas de Informação.
+
+🇵🇹 Português
 📌 Descrição
 
-O projeto SI_Camunda-Workers consiste na implementação de workers em Java para execução de tarefas externas associadas a um processo BPMN modelado na plataforma Camunda.
+O projeto SI Camunda Workers consiste na implementação de External Task Workers em Java, integrados com um processo modelado em BPMN 2.0 na plataforma Camunda.
 
-O sistema permite gerir operações relacionadas com stock de alimentos, geração de etiquetas e produção de relatórios de desperdício, integrando-se com um motor de workflow através do padrão External Task Worker.
+O sistema permite:
 
-🛠 Tecnologias Utilizadas
+Gestão de stock de alimentos
 
-Java
+Geração automática de etiquetas
 
-Maven
+Produção de relatórios de desperdício
 
-Camunda BPM (BPMN 2.0)
+Integração com motor de workflow através do padrão External Task Worker
 
-JSON para armazenamento de dados
+Este repositório inclui:
+
+Implementação dos workers em Java
+
+Ficheiro do processo BPMN
+
+Ficheiro JSON com dados de stock
 
 📂 Estrutura do Projeto
 SI_Camunda-Workers/
@@ -30,91 +39,128 @@ SI_Camunda-Workers/
         │       └── stock_alimentos.json
         └── test/
 
-⚙️ Funcionalidades
+⚙ Funcionalidades
 ✔ Gestão de Stock
 
-Leitura e atualização de dados de stock
+Leitura e atualização de dados
 
-Verificação de disponibilidade de produtos
+Verificação de disponibilidade
 
-Integração com ficheiro JSON de persistência
+Persistência em ficheiro JSON
 
 ✔ Geração de Etiquetas
 
-Criação automática de etiquetas para produtos processados
+Criação automática de etiquetas
 
 Integração com variáveis do processo BPMN
 
-✔ Relatório de Desperdício
+✔ Relatórios de Desperdício
 
-Cálculo e geração de relatórios relacionados com desperdício alimentar
+Cálculo de desperdício alimentar
 
-Atualização de dados no fluxo do processo
+Atualização de variáveis no workflow
 
 🚀 Como Executar
-1️⃣ Pré-requisitos
+Pré-requisitos
 
-Java 17 ou superior
+Java 17+
 
-Maven instalado
+Maven
 
-Motor Camunda em execução (local ou remoto)
+Camunda Engine em execução
 
-Verificar versões instaladas:
+Verificar versões:
 
 java -version
 mvn -version
 
-2️⃣ Compilar o Projeto
-
-Na pasta CamundaWorker, executar:
-
+Compilar
 mvn clean install
 
-3️⃣ Executar os Workers
+Executar
 mvn exec:java
 
 
-Ou executar diretamente a classe principal:
+Ou executar a classe:
 
 org.example.Main
 
-🔄 Funcionamento
+🇬🇧 English
+📌 Description
 
-O processo BPMN é iniciado na Camunda.
+The SI Camunda Workers project consists of the implementation of External Task Workers in Java, integrated with a BPMN 2.0 process using Camunda.
 
-Quando uma Service Task é atingida, o worker correspondente é acionado.
+The system provides:
 
-O worker:
+Food stock management
 
-Obtém as variáveis do processo
+Automatic label generation
 
-Executa a lógica associada
+Waste report production
 
-Atualiza variáveis
+Workflow integration using the External Task pattern
 
-Conclui a tarefa no motor de workflow
+This repository includes:
 
-🧪 Testes
+Java worker implementation
 
-Os testes encontram-se na pasta:
+BPMN process model
 
-src/test/java/
+JSON stock data file
 
+⚙ Features
+✔ Stock Management
 
-Para executar:
+Read and update stock data
 
-mvn test
+Check product availability
 
-📎 Processo BPMN
+JSON-based persistence
 
-O ficheiro do processo encontra-se em:
+✔ Label Generation
 
+Automatically generate product labels
+
+BPMN variable integration
+
+✔ Waste Reports
+
+Calculate food waste
+
+Update workflow process variables
+
+🛠 Technologies
+
+Java
+
+Maven
+
+Camunda BPM (BPMN 2.0)
+
+JSON
+
+🔄 Workflow Integration
+
+The BPMN process is deployed in Camunda.
+
+When a Service Task is reached, the corresponding worker subscribes to the topic.
+
+The worker:
+
+Retrieves process variables
+
+Executes business logic
+
+Updates variables
+
+Completes the task
+
+📎 BPMN Model
 src/main/resources/BPMN_LEI_SI2526_N2.bpmn
 
 
-Pode ser aberto e editado através do Camunda Modeler ou outra ferramenta compatível com BPMN 2.0.
+Can be opened using Camunda Modeler.
 
-👨‍💻 Contexto Académico
+👨‍💻 Academic Context
 
-Projeto desenvolvido no âmbito da unidade curricular de Sistemas de Informação, com foco na integração entre modelação de processos de negócio (BPMN) e implementação de workers externos em Java.
+Developed as part of an academic assignment in the Information Systems course, focusing on the integration between business process modeling and Java-based worker implementation.
